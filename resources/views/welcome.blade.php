@@ -18,12 +18,9 @@
 
     </head>
     <body >
-
-
-
-
-
-        <h1 class="text-center" >Hola Mundo</h1>        
+        <h1 class="text-center" >Hola Mundo</h1>    
+        
+            
 
     </body>
 
