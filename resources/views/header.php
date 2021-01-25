@@ -58,5 +58,6 @@ li a:hover:not(.active) {
         <li><a href="somos.php">Quienes Somos</a></li>
         <li><a href="adopciones.php">Adopciones</a></li>
         <li><a href="noticias.php">Noticias</a></li>
+        <li><a href="admin.php">Admin</a></li>
     </ul>
 </body>
