@@ -1,4 +1,62 @@
 <?php include("config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="/css/estilos.php" media="screen" />
+    
+<style>
+    @font-face {
+  font-family: 'Galada';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Galada Regular'), local('Galada-Regular'), url(https://fonts.gstatic.com/s/galada/v5/H4cmBXyGmcjXlUXO9SY_.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+  background-image: url("../img/fundacion.jpg");
+  font-family: 'Galada';
+  font-size: 1.25em; 
+  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+<body>
+    <ul>
+        <li><a href="somos.php">Quienes Somos</a></li>
+        <li><a href="adopciones.php">Adopciones</a></li>
+        <li><a href="noticias.php">Noticias</a></li>
+    </ul>
+</body>
