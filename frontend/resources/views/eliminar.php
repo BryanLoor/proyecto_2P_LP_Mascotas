@@ -10,7 +10,7 @@ include_once("header.php");
     </tr>
 
     <?php 
-            $sql = "SELECT * FROM adopciones";
+            $sql = "SELECT * FROM adopcions";
             $resultado = mysqli_query($db,$sql);
 
             while ($row = mysqli_fetch_assoc($resultado)) {

@@ -3,7 +3,7 @@ include_once("header.php");
 ?>
 
 <?php 
-    $sql = "INSERT INTO adopciones (especie, sexo, edad, nombre, descripcion) VALUES ('$_GET[especie]','$_GET[sexo]','$_GET[edad]','$_GET[nombre]', '$_GET[descripcion]')";
+    $sql = "INSERT INTO adopcions (especie, sexo, edad, nombre, descripcion) VALUES ('$_GET[especie]','$_GET[sexo]','$_GET[edad]','$_GET[nombre]', '$_GET[descripcion]')";
     if (mysqli_query($db, $sql)) {
         echo "New record created successfully";
     } else {

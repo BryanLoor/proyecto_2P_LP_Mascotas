@@ -2,7 +2,7 @@
 include_once("header.php");
 ?>
 
-    <form action="dataingresar.php" method="get">
+    <form action="http://localhost:4000/adopciones" method="post">
     <p><label >Elija la especie:</label> 
           <select  name="especie">  
               <option>Choose an option</option> 

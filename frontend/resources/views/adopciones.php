@@ -2,7 +2,7 @@
 
 <?php include("header.php"); ?>
 <body>
-  <form action="dataadopciones.php" method="post" align="center">
+  <form action="http://localhost:4000/adopciones" method="post" align="center">
           <p>Elija la especie  </p>
           <select  name="especiee">  
               <option>Choose an option</option> 

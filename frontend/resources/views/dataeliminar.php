@@ -6,7 +6,7 @@ include_once("header.php");
 <?php 
 
    
-    $sql = "DELETE FROM adopciones WHERE nombre = '$_POST[nombre]'";
+    $sql = "DELETE FROM adopcions WHERE nombre = '$_POST[nombre]'";
     if (mysqli_query($db, $sql)) {
         echo "Se ha eliminado con exito!";
     } else {

@@ -4,7 +4,7 @@ include_once("header.php");
 
 
 <?php 
-    $sql = "UPDATE adopciones SET nombre='$_GET[nombre]'  WHERE nombre = $_GET[nombre] ";
+    $sql = "UPDATE adopcions SET nombre='$_GET[nombre]'  WHERE nombre = $_GET[nombre] ";
     if (mysqli_query($db, $sql)) {
         echo "Se ha editado con exito!";
     } else {

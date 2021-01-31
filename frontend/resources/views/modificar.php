@@ -8,9 +8,10 @@ include_once("header.php");
         <th></th>
         <th>NOMBRE DE LA MASCOTA</th>
     </tr>
+    
 
     <?php 
-            $sql = "SELECT * FROM adopciones";
+            $sql = "SELECT * FROM adopcions";
             $resultado = mysqli_query($db,$sql);
 
             while ($row = mysqli_fetch_assoc($resultado)) {

@@ -2,7 +2,7 @@
 
 <?php include("header.php"); ?>
 <?php
-    $sql = "SELECT * FROM adopciones WHERE especie = '$_POST[especiee]' AND sexo ='$_POST[sexoo]'";
+    $sql = "SELECT * FROM adopcions WHERE especie = '$_POST[especiee]' AND sexo ='$_POST[sexoo]'";
     $resultado = mysqli_query($db,$sql);
     while ($row = mysqli_fetch_assoc($resultado)) {
         echo "<p>Especie: $row[especie] <br>";
