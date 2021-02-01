@@ -1,6 +1,6 @@
-class CreateAdopcions < ActiveRecord::Migration[6.1]
+class CreateMascota < ActiveRecord::Migration[6.1]
   def change
-    create_table :adopcions do |t|
+    create_table :mascota do |t|
       t.string :especie
       t.string :sexo
       t.string :edad

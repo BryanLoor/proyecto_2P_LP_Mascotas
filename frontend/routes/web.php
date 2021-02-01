@@ -19,9 +19,7 @@ Route::view('ingresar','ingresar');
 Route::view('somos','somos');
 Route::view('noticias','noticias');
 
-//Route::get('/adopciones','App\Http\Controllers\userController@getRecursos');
-Route::resource('admin','App\Http\Controllers\userController');
-Route::resource('adopciones','App\Http\Controllers\AdopcionesController');
+Route::resource('admin','App\Http\Controllers\AdopcionesController');
 
 
 

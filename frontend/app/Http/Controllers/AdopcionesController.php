@@ -23,10 +23,10 @@ class AdopcionesController extends Controller
 
     public function index()
     {
-        $respuesta=$this->cliente->get('adopciones');
+        $respuesta=$this->cliente->get('mascotas');
         $cuerpo=$respuesta->getBody();
         //return json_decode($cuerpo);
-        return view('eliminar',['adopciones'=>json_decode($cuerpo)]);
+        return view('admin',['mascotas'=>json_decode($cuerpo)]);
     }
 
     /**
@@ -48,7 +48,7 @@ class AdopcionesController extends Controller
      */
     public function store(Request $request)
     {
-        $this->cliente->post('adopciones',[
+        $this->cliente->post('mascotas',[
             'json'=> $request->all()
         ]);
         return redirect('/admin');
@@ -73,7 +73,7 @@ class AdopcionesController extends Controller
      */
     public function edit($id)
     {
-        $respuesta=$this->cliente->get('adopciones/'.$id);
+        $respuesta=$this->cliente->get('mascotas/'.$id);
         $cuerpo=$respuesta->getBody();
         //return json_decode($cuerpo);
         return view('modificar',['mascota'=>json_decode($cuerpo)]);
@@ -89,7 +89,7 @@ class AdopcionesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->cliente->put('adopciones/'.$id,[
+        $this->cliente->put('mascotas/'.$id,[
             'json'=> $request->all()
         ]);
         return redirect('/admin');
@@ -103,7 +103,7 @@ class AdopcionesController extends Controller
      */
     public function destroy($id)
     {
-        $this->cliente->delete('adopciones/'.$id);
+        $this->cliente->delete('mascotas/'.$id);
         return redirect('/admin');
        
     }

@@ -1,3 +1,0 @@
-class Adopcion < ApplicationRecord
-    
-end

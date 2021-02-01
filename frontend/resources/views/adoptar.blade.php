@@ -3,20 +3,20 @@
 @section('contenido')
 
 
-<form action="/" method="post" align="center">
+<form  class="form-control text-center" action="{{ url('adoptar') }}" method="post" >
           <p>Elija la especie  </p>
-          <select  name="especiee">  
+          <select class=" text-center form-select w-50"  name="especiee">  
               <option>Choose an option</option> 
               <option value="gato">Gato</option> 
               <option value="perro">Perro</option> 
           </select > 
           <p>Elija el sexo: </p>
-          <select name="sexoo" >  
+          <select class=" text-center form-select w-50" name="sexoo" >  
               <option>Choose an option</option> 
               <option value="macho">Macho</option> 
               <option value="hembra">Hembra</option> 
           </select>
-          <p><input type="submit"></p>
+          <p><input type="submit" class="btn btn-primary"></p>
       </form>
 
 @endsection

@@ -3,7 +3,7 @@
 @section('contenido')
 
 
-<form action="{{ url('homeAdopciones') }}" method="POST">
+<form action="{{ url('admin') }}" method="POST">
     
     <table >
     <thead>
@@ -14,11 +14,11 @@
     </thead>
 
     <tbody>
-    @foreach($adopciones as $adopcion)      
+    @foreach($mascotas as $mascota)      
                 <tr>
                 <td><input type='radio'></td>
-                <td>{{$adopcion->nombre}}</td>
-                <td>{{$adopcion->id}}</td>
+                <td>{{$mascota->nombre}}</td>
+                <td>{{$mascota->id}}</td>
                 </tr>
     @endforeach
 

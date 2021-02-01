@@ -18,7 +18,7 @@
     <h1 class="text-center"> Opciones de Administrador</h1>
     
 
-    <a href="{{ url('adopciones/create')}} " class="btn btn-warning m-2 " >Ingresar</a>
+    <a href="{{ url('admin/create')}} " class="btn btn-warning m-2 " >Ingresar</a>
     
     <div class=" ">
    
@@ -37,18 +37,18 @@
     </tr>
   </thead>
   <tbody>
-  @foreach($adopciones as $adopcion)
+  @foreach($mascotas as $mascota)
     <tr>
-      <td>{{$adopcion->especie}}</td>
-      <td>{{$adopcion->nombre}}</td>
-      <td>{{$adopcion->edad}}</td>
-      <td>{{$adopcion->id}}</td>
+      <td>{{$mascota->especie}}</td>
+      <td>{{$mascota->nombre}}</td>
+      <td>{{$mascota->edad}}</td>
+      <td>{{$mascota->id}}</td>
       <td>
-      <a href="{{ url('adopciones/'.$adopcion->id.'/edit' )}} " class="btn btn-warning">Editar</a>
+      <a href="{{ url('admin/'.$mascota->id.'/edit' )}} " class="btn btn-warning">Editar</a>
       </td>
 
     <td>
-        <form action="{{ url('adopciones', $adopcion->id) }}"  method="post">
+        <form action="{{ url('admin', $mascota->id) }}"  method="post">
             @csrf
             @method('DELETE')
             <input  class="btn btn-danger" type="submit" value="Eliminar">

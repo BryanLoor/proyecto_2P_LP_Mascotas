@@ -10,9 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_31_170314) do
+ActiveRecord::Schema.define(version: 2021_02_01_211955) do
 
-  create_table "adopcions", charset: "utf8mb4", force: :cascade do |t|
+
+  create_table "mascota", charset: "utf8mb4", force: :cascade do |t|
     t.string "especie"
     t.string "sexo"
     t.string "edad"
@@ -21,8 +22,5 @@ ActiveRecord::Schema.define(version: 2021_01_31_170314) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
-
-
-  
 
 end

@@ -3,13 +3,13 @@
 one:
   especie: MyString
   sexo: MyString
-  edad: 
+  edad: MyString
   nombre: MyString
   descripcion: MyString
 
 two:
   especie: MyString
   sexo: MyString
-  edad: 
+  edad: MyString
   nombre: MyString
   descripcion: MyString

@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('contenido')
-<form  class="" action="{{ url('adopciones', $mascota->id) }}" method="post">
+<form  class="" action="{{ url('admin', $mascota->id) }}" method="post">
     @csrf() 
     @method('put')
     <p><label >Elija la especie:</label> 
