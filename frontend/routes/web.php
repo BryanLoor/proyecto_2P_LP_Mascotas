@@ -12,7 +12,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('/','somos');
+//Route::view('admin','admin');
+Route::view('adoptar','adoptar');
+Route::view('ingresar','ingresar');
+Route::view('somos','somos');
+Route::view('noticias','noticias');
 
-Route::get('/', function () {
-    return view('admin');
-});
+//Route::get('/adopciones','App\Http\Controllers\userController@getRecursos');
+Route::resource('admin','App\Http\Controllers\userController');
+Route::resource('adopciones','App\Http\Controllers\AdopcionesController');
+
+
+
+
+

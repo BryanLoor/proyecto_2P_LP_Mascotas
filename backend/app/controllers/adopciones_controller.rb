@@ -3,9 +3,10 @@ class AdopcionesController < ApplicationController
 
   # GET /adopcions
   def index
+    
     @adopcions = Adopcion.all
-
     render json: @adopcions
+
   end
 
   # GET /adopcions/1
@@ -37,13 +38,16 @@ class AdopcionesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_adopcion
       @adopcion = Adopcion.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def adopcion_params
       params.permit(:especie, :sexo, :edad, :nombre, :descripcion)
     end
+
+    def adopcion_delete_params
+      params.permit(:id)
+    end
+
 end
