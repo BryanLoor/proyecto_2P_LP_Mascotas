@@ -1,5 +1,7 @@
 <?php
 include_once("header.php");
+include("consumeApi.php");
+
 ?>
 
 <form action="dataeliminar.php" method="post">
@@ -18,6 +20,19 @@ include_once("header.php");
                         <td><input type='radio' name='nombre' value=$row[nombre]></td>
                         <td>$row[nombre]</td>
                     </tr>";
+            }
+
+
+            for($i=0;$i<count($arrayDatos);$i++){
+                $nombre=$arrayDatos[$i]['nombre'];
+                $id=$arrayDatos[$i]['id'];
+                
+                echo "<tr>
+                <td><input type='radio' name='id' value=$id></td>
+                <td>$nombre</td>
+                <td>$id</td>
+                
+                </tr>";
             }
 
         ?>
