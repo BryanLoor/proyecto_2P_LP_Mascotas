@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_animal: MyString
+  cedula: MyString
+  nombre: MyString
+  edad: 1
+  sexo: MyString
+  telefono: MyString
+  email: MyString
+  direccion: MyString
+  patio: MyString
+
+two:
+  id_animal: MyString
+  cedula: MyString
+  nombre: MyString
+  edad: 1
+  sexo: MyString
+  telefono: MyString
+  email: MyString
+  direccion: MyString
+  patio: MyString
