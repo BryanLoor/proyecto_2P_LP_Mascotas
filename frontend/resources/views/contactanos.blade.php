@@ -7,11 +7,14 @@
 <div class="cabecera" align="center">
     <h2 class="tituloCabecera"> Contáctanos </h2>
 </div>
+<<<<<<< HEAD
 <!--a href="{{ url('contacto/create')}} " class="btn btn-warning m-2 " >Ingresar</a-->
     
+=======
+>>>>>>> 0f55869c54084ce54e89d3d90e1cf339e78eea4b
 <div id="contacto" align="center">
     <p> Llena el siguiente formulario para regitrar tu adopción, pronto te contactaremos</p>
-    <form  class="" action="{{ url('contacto') }}" method="post">
+    <form  class="" action="{{ url('contacto/create') }}" method="post" align="center">
     @csrf() 
         <p>Ingrese el id de las mascota: <input type="text" name="id_mascota" required></p>
         <p>Ingrese su cédula: <input type="text" name="cedula" required></p>
