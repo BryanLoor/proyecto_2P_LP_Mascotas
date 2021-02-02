@@ -18,6 +18,7 @@ Route::view('adoptar','adoptar');
 Route::view('ingresar','ingresar');
 Route::view('somos','somos');
 Route::view('noticias','noticias');
+Route::view('contactanos','contactanos');
 
 Route::resource('admin','App\Http\Controllers\AdopcionesController');
 

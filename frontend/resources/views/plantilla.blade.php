@@ -17,6 +17,7 @@
         <li><a href="{{ url('somos')}}">Quienes Somos</a></li>
         <li><a href="{{ url('noticias')}}">Noticias</a></li>
         <li><a href="{{ url('adoptar')}}">Adoptar</a></li>
+        <li><a href="{{ url('contactanos')}}">Contacto</a></li>
     </ul>
 
     <div>
