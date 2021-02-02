@@ -7,7 +7,7 @@
 <div class="cabecera" align="center">
     <h2 class="tituloCabecera"> Contáctanos </h2>
 </div>
-<a href="{{ url('contacto/create')}} " class="btn btn-warning m-2 " >Ingresar</a>
+<!--a href="{{ url('contacto/create')}} " class="btn btn-warning m-2 " >Ingresar</a-->
     
 <div id="contacto" align="center">
     <p> Llena el siguiente formulario para regitrar tu adopción, pronto te contactaremos</p>

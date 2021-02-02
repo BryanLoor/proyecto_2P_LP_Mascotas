@@ -77,7 +77,6 @@ class AdopcionesController extends Controller
         $cuerpo=$respuesta->getBody();
         //return json_decode($cuerpo);
         return view('modificar',['mascota'=>json_decode($cuerpo)]);
-        
     }
 
     /**

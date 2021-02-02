@@ -12,6 +12,16 @@
 
 ActiveRecord::Schema.define(version: 2021_02_02_001956) do
 
+  create_table "adopcions", charset: "utf8mb4", force: :cascade do |t|
+    t.string "especie"
+    t.string "sexo"
+    t.string "edad"
+    t.string "nombre"
+    t.string "descripcion"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "mascota", charset: "utf8mb4", force: :cascade do |t|
     t.string "especie"
     t.string "sexo"

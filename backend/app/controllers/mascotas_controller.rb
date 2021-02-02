@@ -14,6 +14,8 @@ class MascotasController < ApplicationController
     render json: @mascota
   end
 
+  
+
   # POST /mascotas
   def create
     @mascota = Mascota.new(mascota_params)

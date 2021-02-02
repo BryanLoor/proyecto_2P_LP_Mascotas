@@ -1,8 +1,8 @@
 @extends('plantilla')
-
 @section('contenido')
     <div class="container d-flex justify-content-center text-center w-50 ">
-        <form  class="primary form-control" action="{{ url('adoptar,') }}" method="post" >
+        <form  class="primary form-control" action="{{ url('adoptar/buscar') }}" method="post" >
+        @csrf
             <label for="" class="form-label text-white ">Elija la especie</label>
                 <select class="form-select "  name="especie">  
                     <option class="form-select">Escoja una opcion</option> 
@@ -18,11 +18,12 @@
                 </select>
                 <p><input type="submit" class="btn btn-success"></p>
         </form>
-
+    
     </div>
       <div class=" container-fluid ">
       <div class="row d-flex justify-content-center">
         @foreach($mascotas as $mascota)
+        
         <div class="card col-lg-3 col-sm-4 p-2 m-2 " style="width: 18rem;">
             <h5 class="card-title">{{$mascota->nombre}}</h5>
             <div class="bg-image ">

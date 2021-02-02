@@ -17,12 +17,14 @@
   
     <h1 class="text-center"> Opciones de Administrador</h1>
     
+<div class="text-center">
+<a href="{{ url('admin/create')}} " class="btn btn-warning m-2" >Ingresar</a>
 
-    <a href="{{ url('admin/create')}} " class="btn btn-warning m-2 " >Ingresar</a>
+</div>
     
-    <div class=" ">
-   
-    <table class="table table-striped w-75">
+    <div class="container d-flex justify-content-center text-center ">
+
+    <table class="table table-dark w-75">
     <thead>
     <tr>
       <th scope="col">Especie</th>

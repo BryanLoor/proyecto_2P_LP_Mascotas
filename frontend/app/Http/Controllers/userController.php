@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use PhpParser\Node\Expr\Assign;
+use PhpParser\Node\Expr\Cast\Array_;
+use PhpParser\Node\Expr\Cast\Object_;
+
 class userController extends Controller
 {
 private $cliente;
@@ -22,18 +26,21 @@ private $cliente;
     }
 
 
-    public function ObtenerSeleccion($id){
+    public function ObtenerSeleccion(Request $request){
+        $resultados= array();
+        $respuesta=$this->cliente->get('mascotas');
+        $cuerpo=json_decode($respuesta->  getBody());
+        $json = $request->all();
+        foreach($cuerpo as $valor){
+            if($valor->especie == $json["especie"] && 
+            $valor->sexo == $json["sexo"]){
+                array_push($resultados,$valor);
+            }
 
-        $respuesta=$this->cliente->get('mascotas/'.$id);
-        $cuerpo=$respuesta->getBody();
-        //return json_decode($cuerpo);
-        return view('adoptar',['mascotas'=>json_decode($cuerpo)]);
+        }
+        return view('adoptar',['mascotas'=>$resultados]);
 
 
     }
-
-
-
-
 
 }

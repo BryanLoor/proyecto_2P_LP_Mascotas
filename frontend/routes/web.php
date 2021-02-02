@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::view('/','somos');
 //Route::view('admin','admin');
-Route::view('adoptar','adoptar');
+//Route::view('adoptar','adoptar');
 Route::view('ingresar','ingresar');
 Route::view('somos','somos');
 Route::view('noticias','noticias');
@@ -23,7 +23,7 @@ Route::view('contactanos','contactanos');
 Route::resource('admin','App\Http\Controllers\AdopcionesController');
 
 Route::get('adoptar','App\Http\Controllers\userController@findAll');
-Route::post('adoptar','App\Http\Controllers\userController@ObtenerSeleccion');
+Route::post('adoptar/buscar','App\Http\Controllers\userController@ObtenerSeleccion');
 
 
 
