@@ -22,7 +22,12 @@
         <input accept="image/*" id="file=img" name="imagenMascota" type="file"/>
 
         <p>Subir una imagen de la mascota <input type="submit" value="Registrar"  class="btn btn-primary"></p>
+        
 
+
+
+
+        
     </form>
 
 

@@ -21,6 +21,8 @@ Route::view('noticias','noticias');
 
 Route::resource('admin','App\Http\Controllers\AdopcionesController');
 
+Route::get('adoptar','App\Http\Controllers\userController@findAll');
+Route::post('adoptar','App\Http\Controllers\userController@ObtenerSeleccion');
 
 
 

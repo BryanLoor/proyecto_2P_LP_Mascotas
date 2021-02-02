@@ -43,6 +43,10 @@
   li a:hover:not(.active) {
       background-color: #111;
   }
+  .primary{
+    background-color: rgb(52, 69, 165);
+
+  }
   
   .active {
       background-color: #4CAF50;

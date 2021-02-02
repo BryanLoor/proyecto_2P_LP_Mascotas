@@ -13,12 +13,27 @@ private $cliente;
         ]);
     }
 
-    public function index()
+    public function findAll()
     {
         $respuesta=$this->cliente->get('mascotas');
         $cuerpo=$respuesta->getBody();
         //return json_decode($cuerpo);
-        return view('admin',['mascotas'=>json_decode($cuerpo)]);
+        return view('adoptar',['mascotas'=>json_decode($cuerpo)]);
     }
+
+
+    public function ObtenerSeleccion($id){
+
+        $respuesta=$this->cliente->get('mascotas/'.$id);
+        $cuerpo=$respuesta->getBody();
+        //return json_decode($cuerpo);
+        return view('adoptar',['mascotas'=>json_decode($cuerpo)]);
+
+
+    }
+
+
+
+
 
 }
