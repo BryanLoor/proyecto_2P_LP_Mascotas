@@ -94,9 +94,9 @@
         @yield('contenido')
         
     </div>
-    </body>
-    <footer>
-        @include('footer')
-    </footer>
+</body>
+<footer>
+    @include('footer')
+</footer>
     
 </html>
