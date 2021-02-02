@@ -9,7 +9,7 @@
 </div>
 <!--a href="{{ url('contacto/create')}} " class="btn btn-warning m-2 " >Ingresar</a-->
     
-<div id="contacto" align="center">
+<div class="caja" align="center">
     <p> Llena el siguiente formulario para regitrar tu adopción, pronto te contactaremos</p>
     <form  class="" action="{{ url('contacto/create') }}" method="post" align="center">
     @csrf() 
@@ -17,12 +17,13 @@
         <p>Ingrese su cédula: <input type="text" name="cedula" required></p>
         <p>Ingrese su nombre: <input type="text" name="nombre" required></p>
         <p>Ingrese su edad: <input type="text" name="edad" required></p>
-        <p>Género: </p>
+        <p>Género: 
           <select name="genero" >  
               <option>Choose an option</option> 
               <option value="masculino">Masculino</option> 
               <option value="Femenino">Femenino</option> 
           </select>
+        </p>
         <p>Ingrese su telefono: <input type="text" name="telefono" required></p>
         <p>Ingrese su email: <input type="text" name="descripcion" required></p>
         <p>Ingrese su dirección: <input type="text" name="direccion" required></p>
@@ -31,7 +32,7 @@
     </form>
     
 </div>
-
+<p>   </p>
 
 
 @endsection

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-</head>   
+</head>
 <style>
    @font-face {
     font-family: 'Galada';
@@ -17,6 +17,23 @@
     src: local('Galada Regular'), local('Galada-Regular'), url(https://fonts.gstatic.com/s/galada/v5/H4cmBXyGmcjXlUXO9SY_.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
+  .caja{
+    background: #f7f5f5; 
+    font-weight: bold; 
+    padding: 15px; 
+    border-left:8px solid #000000; 
+    border-top-left-radius:8px; 
+    border-bottom-left-radius:8px;
+  }
+  h2 {
+  background-color: black;
+  color: white;
+}
+.fin {
+  background-color: black;
+  color: white;
+  
+}
   body {
     background-image: url("../img/fundacion.jpg");
     font-family: 'Galada';
@@ -77,11 +94,9 @@
         @yield('contenido')
         
     </div>
-
-
-    <p>Grupo de LP</p>
-  <p><a href="mailto:lp@example.com">lp@example.com</a></p>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-</body>
+    </body>
+    <footer>
+        @include('footer')
+    </footer>
+    
 </html>

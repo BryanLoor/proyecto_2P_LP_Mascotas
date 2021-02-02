@@ -2,7 +2,7 @@
 
 @section('contenido')
 <div class="container d-flex justify-content-center text-center  ">
-
+<p></p>
 <form  class="bg-secondary form-control w-75 " action="{{ url('admin', $mascota->id) }}" method="post">
     @csrf() 
     @method('put')
@@ -25,7 +25,7 @@
         <p><input type="submit" value="Actualizar Mascota" class="btn btn-success"></p>
 
     </form>
-
+    <p></p>
 
     </div>
 

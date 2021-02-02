@@ -1,6 +1,7 @@
 @extends('plantilla')
 
 @section('contenido')
+<p></p>
 <form  enctype="multipart/form-data" class="" action="{{ url('admin') }}" method="post">
     @csrf() 
     <p><label >Elija la especie:</label> 
@@ -30,7 +31,7 @@
         
     </form>
 
-
+    <p></p>
 
 
 

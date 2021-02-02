@@ -1,5 +1,6 @@
 @extends('plantilla')
 @section('contenido')
+    
     <div class="container d-flex justify-content-center text-center w-50 ">
         <form  class="primary form-control" action="{{ url('adoptar/buscar') }}" method="post" >
         @csrf
@@ -34,7 +35,7 @@
             <p class="card-text">Edad : {{$mascota->edad}} años</p>
             <p class="card-text">Sexo : {{$mascota->sexo}}</p>
             <p class="card-text">{{$mascota->descripcion}}</p>
-            <a href="#!" class="btn btn-primary">Adoptar</a>
+            <a href="{{ url('contactanos')}} "class="btn btn-primary">Adoptar</a>
             </div>
         </div>
         @endforeach
